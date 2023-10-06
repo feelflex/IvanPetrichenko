@@ -47,7 +47,7 @@ const tottalquantityFries = quantityFries1 + quantityFries2;
 
 switch (true) {
     case quantityHamburger1 + quantityHamburger2 <= quantityHamburger && quantityFries1 + quantityFries2 <= quantityFries:
-        alert ("We HAVE ENOUGH HAMBURGERS!" + "\n and" + "\nWe HAVE ENOUGH FRIES!" + "\n Enjoy your meal!");
+        alert ("We HAVE ENOUGH HAMBURGERS!" + "\n and" + "\n We HAVE ENOUGH FRIES!" + "\n Enjoy your meal!");
         break;
     default:
         alert ("We DON'T HAVE ENOUGH FOOD, We have in stock only " +
