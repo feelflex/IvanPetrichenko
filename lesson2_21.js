@@ -22,3 +22,42 @@ switch (true) {
         break;
     default: alert("Maybe");
 }
+
+// VERSION2 
+
+"use strict";
+
+const quantityHamburger = 10;
+const quantityFries = 3;
+
+const hamburger = prompt("How many hamburgers  you want FRIEND 1?", "");
+const fries = prompt("How many fries you want FRIEND 1?", "");
+
+const hamburger2 = prompt("How many hamburgers you want FRIEND 2?", "");
+const fries2 = prompt("How many fries you want FRIEND 2", "");
+
+const quantityHamburger1 = parseInt(hamburger);
+const quantityFries1 = parseInt(fries);
+
+const quantityHamburger2 = parseInt(hamburger2);
+const quantityFries2 = parseInt(fries2);
+
+const tottalquantityHamburger = quantityHamburger1 + quantityHamburger2;
+const tottalquantityFries = quantityFries1 + quantityFries2;
+
+switch (true) {
+    case quantityHamburger1 + quantityHamburger2 <= quantityHamburger && quantityFries1 + quantityFries2 <= quantityFries:
+        alert ("We HAVE ENOUGH HAMBURGERS!" + "\n and" + "\nWe HAVE ENOUGH FRIES!" + "\n Enjoy your meal!");
+        break;
+    default:
+        alert ("We DON'T HAVE ENOUGH FOOD, We have in stock only " +
+            "\n" + quantityHamburger + " hamburgers" +
+            "\n and " + "\n" + quantityFries + " fries" +
+            "\n" +
+            "\n" + "You ordered: " +
+            "\n" + tottalquantityHamburger + " : Hamburgers" +
+            "\n" + "and" +
+            "\n" + tottalquantityFries + " : Fries" +
+            "\n" +  " Make new order or come later");
+        break;
+}
